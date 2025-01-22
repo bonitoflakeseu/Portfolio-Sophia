@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\hermi\Desktop\PORTFOLIO\portfolio.css">
+    <title>Portfolio</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about-me">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">contact</a>
+            
+        </nav>
+    </div>
+
+    <!-- HOME -->
+     <section class="home" id="home">
+        
+        <div class="home-content">
+            <h1>Hi I'm <span>Skye</span></h1>
+            <h3 class="typing-text">I am a <span>UI/UX designer and a Front-End Developer</span></h3>
+            <br>
+            <p>One thing about me is that I am really passionate about tasks, I's like to give the best idea that I can in order to make a good working outcome and environment!</p>
+        </div>
+        <div class="social-icons">
+        </div>
+
+        <div class="home-img">
+            <img class="sophia"  src="sophia.jpg" alt="">
+        </div>
+     </section>
+
+     <!-- ABOUT ME -->
+      <section id="about-me" class="about-me">
+        <div class="polaroid">
+            <img class="pfp" src="sophia2.png" alt="">
+        </div>
+        <div class="about-me-headline">
+            <h1 class="details1">Sophia Kaye G. Domingo </h3>
+            <h3 class="details2">22 years old </h3>
+            <h3 class="details3">Bachelor of Science in Information Technology</h3>        
+        </div>
+
+        <div class="skills">
+            <div class="front-end">
+                <img src="front-end.png" alt=""></img>
+            </div>
+            <div class="uiux">
+                <img src="uiux.png" alt=""></img>
+            </div>
+            <div class="illus">
+                <img src="illus.png" alt=""></img>
+            </div>
+        </div>
+      </section>
+
+      <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-point"></div>
+                <div class="school-details">
+                    <h3>Pamantasan ng Lungsod ng Maynila</h3>
+                    <p>2021 - Present </p>
+                    <p>Bachelor of Science in Information Technology</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-point"></div>
+                <div class="school-details">
+                    <h3>First City Providential College</h3>
+                    <p>2020 - 2021</p>
+                    <p>Bachelor of Science in Information Technology</p>
+                    <p>2018 - 2020</p>
+                    <p>Science, Technology, Engineering and Mathematics (STEM)</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-point"></div>
+                <div class="school-details">
+                    <h3>Berlyn Academy</h3>
+                    <p>2014 - 2018</p>
+                    <p>Junior High School</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects"> PROJECTS
+        <div class="abcify">
+            <h1 class="title"> ABCiFY</h1>
+            <h2 class="subtitle">Enhancing Alphabet Learning through Image Classification using Convolutional Neural Network</h2>
+            <p>In this project, I took the lead as the Front-End Developer and UI/UX Designer, crafting a visually appealing logo and designing a user-friendly theme to enhance the overall experience.</p>
+            <img class="img1" src="abcify.png"></img>
+            
+            
+        </div>
+        <br>
+        <div class="clevart">
+            <h1 class="title"> ClevArt</h1>
+            <h2>Artwork Image Classification Using Naive Bayes Algorithm</h2>
+            <p>I was part of the Front-End Developer in this project focusing on the visual appearance of the website. I also created the logo for ClevArt.</p>
+            <img class="img1" src="clevart.png"></img>
+        </div>
+        <br>
+        <div class="btt">
+            <h1 class="title"> Bahay Turo Turo</h1>
+            <p>A food website showcasing Filipino foods</p>
+            <p>In this project, I created the logo and other graphics.</p>
+
+            <img class="img1" src="btt.png"></img>
+        </div><br>
+        <div class="other">
+            <h1 class="title"> Wireframes and Redesigning projects</h1>
+            <img class="img1" src="other.png"></img>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>You can find me at</h2>
+        <div>
+            <!-- Instagram -->
+            <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="50" height="50">
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/sophia-domingo-80b2b8348" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="50" height="50">
+            </a>
+            <!-- email -->
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="50" height="50">
+            </a>
+        </div>
+    </section>
+
+</div>
+<!-- <script>
+    let currentIndex = 0;
+
+    function moveSlide(direction) {
+        const slides = document.querySelectorAll('.creation');
+        const totalSlides = slides.length;
+
+        currentIndex += direction;
+        
+        if (currentIndex < 0) {
+            currentIndex = totalSlides - 1;
+        } else if (currentIndex >= totalSlides) {
+            currentIndex = 0;
+        }
+
+        const slider = document.querySelector('.slider');
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+</script> -->
+</body>
+</html>

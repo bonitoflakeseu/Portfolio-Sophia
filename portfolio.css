@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", serif;;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #131217;}
+
+
+/* Logo */
+.logo img {
+    width: 100px; 
+    height: auto; 
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #131217;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 20px; /* Adjust height to accommodate three lines */
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.nav-toggle-label span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-toggle-label span::before {
+    content: '';
+    top: -8px; /* Spacing for the top line */
+}
+
+.nav-toggle-label span::after {
+    content: '';
+    top: 8px; /* Spacing for the bottom line */
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+nav a.active {
+    color: #8c52ff; 
+}
+
+section{
+    min-height: 100vh;
+    padding:5rem;
+
+}
+
+/* HOME */
+.home{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    background-color: #131217;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content{
+    margin-top: 8%;
+}
+
+span{
+    color: #46359d;
+}
+
+section{
+    color: whitesmoke;
+}
+
+.about-me{
+    background-color: white;
+    min-height: 99vh;
+    border-radius: 30px;
+    margin: 30px;
+    color: #131217;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:40px;
+    padding: 20px 70px;
+
+}
+
+
+.sophia {
+    width:60%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    align-items: right;
+    margin-left: 30%;
+    display: block;
+    margin-top: 10%;
+}
+
+
+.details1{
+    color: #46359d;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 20px;
+    gap: 20px; 
+}
+
+.polaroid {
+    width: 220px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.pfp {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.about-me-headline {
+    flex: 1;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.details1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details2,
+.details3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px 0;
+}
+.skills div {
+    flex: 1;
+    text-align: center;
+}
+
+.skills img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* EDUCATION */
+#education {
+    margin: 40px 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-image: url('bg.png');
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: bottom right; /* Aligns the image to the bottom right */
+    background-size: 50%; /* Default size for large screens */
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 55px;
+    font-size: 2.7em;
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.timeline-point {
+    width: 20px;
+    height: 20px;
+    background-color: #8c52ff; /* Change this color for the point */
+    border-radius: 50%;
+    position: absolute;
+    left: -10px; /* Adjust to stick the point to the line */
+    top: 10px; /* Adjust the vertical position of the point */
+}
+
+.school-details {
+    margin-left: 30px;
+    text-align: left;
+}
+
+.school-details h3 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.school-details p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1.5em;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 100px; 
+    height: 430px;
+    border-left: 2px solid #8c52ff; 
+    width: 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.3); /* White glowing effect */}
+
+/* PORTFOLIO */
+.work-experience {
+    padding: 50px;
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.creation {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.creation img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.description {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/* PROJECTS */
+
+#projects {
+    font-family: "Poppins", serif;
+    text-align: center; 
+    padding: 20px; 
+    background-color: white;
+    color: #8c52ff; 
+    min-height: 99vh;
+    border-radius: 30px;
+    margin: 30px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#projects h1 {
+    font-size: 90%; 
+    color: #333; 
+    margin-bottom: 2px; 
+}
+
+#projects .abcify {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+#projects .abcify h1 {
+    font-size: 2.5rem; /* Slightly smaller font size for the ABCiFY title */
+    color: #555; /* Secondary color for the subtitle */
+}
+
+#projects p {
+    font-size: 1.2rem; /* Sets a readable font size for the description */
+    color: #666; 
+    margin-bottom: 15px; 
+    font-weight: lighter;
+}
+
+#projects h2 {
+    font-size: 1.2rem; 
+    color: #666; 
+    font-weight: bold;
+}
+
+#projects img {
+    width: 80%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px; 
+    border: 1px solid blueviolet;
+}
+
+#projects .clevart{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+/* ACCOUNTS */
+#contact {
+    text-align: center;
+    padding: 30px;
+}
+
+#contact h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contact a {
+    text-decoration: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#contacta:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+    filter: brightness(1.2); /* Make the icon brighter */
+}
+
+#contact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#contact img:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+
+@media (max-width: 768px) {
+    #education {
+        background-size: 40%; /* Reduce the size of the background image */
+        background-position: bottom right; /* Center horizontally */
+    }
+
+    .timeline::before {
+        height:760px;
+    }
+
+    .nav-toggle-label {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #131217;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    nav a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label + nav {
+        max-height: 300px; /* Adjust based on the number of links */
+    }
+
+    /* Hamburger menu animations */
+    .nav-toggle:checked + .nav-toggle-label span {
+        background-color: transparent; /* Hide the middle line */
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+}
