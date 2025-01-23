@@ -93,12 +93,12 @@ nav a:hover {
 }
 
 
-nav a.active {
-    color: #8c52ff; 
+nav a:active {
+    color: #8c52ff !important;
 }
 
 section{
-    min-height: 100vh;
+    min-height: 10vh;
     padding:5rem;
 
 }
@@ -214,14 +214,14 @@ section{
 
 .skills {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     margin-top: 40px;
     width: 100%;
     padding: 20px 0;
 }
-.skills div {
+.skills > div {
     flex: 1;
     text-align: center;
 }
@@ -483,7 +483,7 @@ button:hover {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     #education {
         background-size: 40%; /* Reduce the size of the background image */
         background-position: bottom right; /* Center horizontally */
@@ -553,5 +553,13 @@ button:hover {
     .nav-toggle:checked + .nav-toggle-label span::after {
         transform: rotate(-45deg);
         top: 0;
+    }
+
+    .skills {
+        flex-direction: column; /* Stack items in a column */
+        align-items: center; /* Center align the stacked items */
+        transform: scale(0.7);
+        padding:0 ;
+        margin: -180px;
     }
 }
