@@ -406,10 +406,6 @@ button:hover {
     margin-top: 20px; 
 }
 
-#projects .abcify h1 {
-    font-size: 2.5rem; /* Slightly smaller font size for the ABCiFY title */
-    color: #555; /* Secondary color for the subtitle */
-}
 
 #projects p {
     font-size: 1.2rem; /* Sets a readable font size for the description */
@@ -561,5 +557,13 @@ button:hover {
         transform: scale(0.7);
         padding:0 ;
         margin: -180px;
+    }
+
+    #projects h1{
+        font-size: 60%;
+    }
+
+    #projects p{
+        font-size: 30%;
     }
 }
