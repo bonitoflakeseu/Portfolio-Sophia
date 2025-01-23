@@ -493,27 +493,35 @@ button:hover {
         height:760px;
     }
 
+
     .nav-toggle-label {
         display: block;
     }
 
     nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #131217;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #131217;
-        flex-direction: column;
-        align-items: center;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
+        padding: 20px;
+        z-index: 999;
     }
 
     nav a {
         padding: 10px 0;
         width: 100%;
         text-align: center;
+    }
+    .nav-toggle:checked + label + nav {
+        display: flex;
+    }
+
+    .nav-toggle:checked {
+        display: none;
     }
 
     .nav-toggle:checked + .nav-toggle-label + nav {

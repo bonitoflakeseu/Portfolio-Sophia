@@ -14,20 +14,19 @@
 <body>
 <div class="container">
     <div class="navbar">
-        <div class="logo">
+        <a href="#home" class="logo">
             <img src="logo.png" alt="Logo">
-        </div>
+        </a>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
         </label>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about-me">About Me</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">contact</a>
-            
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about-me" class="nav-link">About Me</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contacts</a>
         </nav>
     </div>
 
@@ -38,7 +37,7 @@
             <h1>Hi I'm <span>Skye</span></h1>
             <h3 class="typing-text">I am a <span>UI/UX designer and a Front-End Developer</span></h3>
             <br>
-            <p>One thing about me is that I am really passionate about tasks, I's like to give the best idea that I can in order to make a good working outcome and environment!</p>
+            <p>One thing about me is that I am really passionate about tasks, I'd like to give the best idea that I can in order to make a good working outcome and environment!</p>
         </div>
         <div class="social-icons">
         </div>
@@ -154,24 +153,15 @@
     </section>
 
 </div>
-<!-- <script>
-    let currentIndex = 0;
+<script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navToggle = document.getElementById('nav-toggle');
 
-    function moveSlide(direction) {
-        const slides = document.querySelectorAll('.creation');
-        const totalSlides = slides.length;
-
-        currentIndex += direction;
-        
-        if (currentIndex < 0) {
-            currentIndex = totalSlides - 1;
-        } else if (currentIndex >= totalSlides) {
-            currentIndex = 0;
-        }
-
-        const slider = document.querySelector('.slider');
-        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-</script> -->
+    navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+    navToggle.checked = false;
+    });
+});
+</script>
 </body>
 </html>
