@@ -284,13 +284,13 @@ section{
 
 .school-details h3 {
     margin: 0;
-    font-size: 2em;
+    font-size: 200%;
 }
 
 .school-details p {
     margin: 5px 0;
     color: #555;
-    font-size: 1.5em;
+    font-size: 150%;
 }
 
 .timeline::before {
@@ -483,15 +483,27 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #education {
         background-size: 40%; /* Reduce the size of the background image */
         background-position: bottom right; /* Center horizontally */
     }
 
     .timeline::before {
-        height:760px;
+        height:76%;
     }
+
+    .school-details h3 {
+        margin: 0;
+        font-size: 110%;
+    }
+    
+    .school-details p {
+        margin: 5px 0;
+        color: #555;
+        font-size:65%;
+    }
+    
 
 
     .nav-toggle-label {
