@@ -566,5 +566,8 @@ button:hover {
     #projects p{
         font-size: 30%;
     }
+    .home-img{
+        display: none;
+    }
 }
 
